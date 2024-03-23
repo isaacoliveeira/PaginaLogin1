@@ -4,14 +4,11 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(116, 243, 255), rgb(54, 194, 215), rgb(188, 200, 202));
-    display: flex;
-    padding: 0;
-    justify-content: center;
-    margin: 0;
     height: 100vh;
-    align-items: center; 
+    margin: 0px;
+    padding: 0px;
 }
+
 h1 {
     font-family: "FonteOswald";
     text-align: center;
@@ -19,46 +16,54 @@ h1 {
     -webkit-text-stroke: 2px rgba(23, 45, 45, 0.59);
     font-size: 50px;
 
-}
-.inputNome, .inputSenha, .inputLogin, .inputNovaSenha {
-    background-color: rgba(57, 154, 154, 0);
-    margin-left: 200px;
-    margin-top: 40px;
-    margin-bottom: px;
-    width: 350px;
-    height: 35px;
-    font-family: "FonteOswald";
-    font-size: 12px;
-}
-.espaco {
-    width: 700px;
-    height: 400px;
-    position: absolute;
-    background-image: linear-gradient(rgba(113, 210, 219, 0), rgb(30, 152, 170),rgba(39, 111, 122, 0));
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%,-50%);
-    margin-top: 300px;
-    border-radius: 2%;
-}
-.nome_completo, .email, .senha, .repetirSenha {
-    font-size: 25px;
-    margin-top: -15px;
-    background-color: rgba(52, 86, 87, 0);
 
 }
+
+.container {
+
+    background-image: linear-gradient(rgb(116, 243, 255), rgb(54, 194, 215), rgb(188, 200, 202));
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    align-items: center; 
+    flex-direction: column;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+.espaco {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(113, 210, 219, 0), rgb(30, 152, 170),rgba(39, 111, 122, 0));
+    border-radius: 2%;
+    gap: 20px;
+    position:relative;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(57, 154, 154, 0);
+    width: 350px;
+    font-family: "FonteOswald";
+    font-size: 12px;
+    height: 30px;
+}
+
 .buttonCadastro {
-    margin-top: 75px;
     font-size: 20px;
-    margin-left: 290px;
     width: 150px;
     background-color: rgb(52, 86, 87);
     font-family: 'FonteOswald';
     border-radius: 8px;
 }
 .fazerLogin{
-    margin-left: 343px;
-    margin-top: 0px;
     font-family: "FonteOswald";
     font-size: 12px;
+}
+
+input {
+    background-color: rgba(73, 209, 209, 0);
+    border-radius: 4px;
 }
